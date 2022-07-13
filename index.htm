@@ -1,0 +1,351 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<script type="text/javascript">if (self != top) top.location.replace(self.location)</script>   
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>                                                  </title>
+<script language="javascript">
+pos =0;
+message="Nguyễn Văn Thủy-TRUNG TÂM VIỄN THÔNG 3-VNPT Hà Nội xin chào các bạn";
+maxlength = message.length+1;
+function writemsg()
+{
+	if(pos < maxlength)
+	{
+		txt = message.substring(pos,0);
+		document.title= txt;
+		pos++;
+		timer = setTimeout("writemsg()",100);
+	}
+	
+	
+}
+function stoptimer()
+{
+	clearTimeout(timer);
+}
+</script>
+<script>
+
+function startTime()
+{
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	m = checkTime(m);
+	s = checkTime(s);
+	
+	document.getElementById('timer').innerHTML = h + ":"+m+":" + s;
+	
+	var t = setTimeout(function(){startTime();},200);
+}
+
+function checkTime(i)
+{
+	if(i<10)
+	{
+		i = "0"+i;
+	}
+	return i;
+}
+
+
+</script>
+
+
+<!-- InstanceEndEditable -->
+<link href="css/traitim.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+.font {	font-family: tahoma;
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none;
+}
+.font13 {	font-family: tahoma;
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+}
+.style4 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style5 {color: #330099}
+-->
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style6 {
+	color: #990066;
+	font-size: 16;
+	font-weight: bold;
+}
+.style7 {
+	color: #669999;
+	font-weight: bold;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body onload ="startTime()" onUnLoad ="stoptimer()" onload = "writemsg()">
+<div id = "timer"> </div>
+<div>
+<script language ="javascript">
+var today = new Date();
+var date = today.getDate();
+var month = today.getMonth()+1;
+var year = today.getFullYear();
+var day;
+var numday = today.getDay();
+switch (numday)
+{
+case 0 : day ="chủ nhật "; break;
+case 1: day = "thứ hai "; break;
+case 2 : day = "thứ ba " ; break;
+case 3 : day = "thư tư " ; break;
+case 4 : day ="thứ năm " ; break; 
+case 5 : day ="thứ sáu"; break;
+default: day = "thứ bảy";
+}
+date =(date >9) ? date : "0" + date;
+month = (month >9) ? month : "0" + month;
+document.write(day+" ," + date + "/" +month + "/" + year);
+</script>
+</div>
+
+
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0" class="header">
+    <!--DWLayoutTable-->
+
+    <tr>
+      <td height="63" colspan="4" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr>
+          <td width="62" height="33"></td>
+          <td width="290"></td>
+          <td width="21"></td>
+          <td width="120" rowspan="2" align="left" valign="bottom" class="font_header"><div align="center"><a href="info.htm">Thông tin cá nhân </a></div></td>
+		  <td width="80" rowspan="2" align="left" valign="bottom" class="font_header"><div align="center"><a href="ky_thuat_su_dung_JavaScript.htm">JavaScript </a></div></td>
+
+        <td width="80" rowspan="2" valign="bottom"><div align="center"><span class="style4"><a href="sothich.htm" class="font_header">Sở Thích </a></span></div></td>
+       
+         <td width="120" rowspan="2" align="left" valign="bottom" class="font_header"><div align="center"><a href="congviec_hoctap.htm">Công Việc-Học Tập</a> </div></td>
+
+          <td width="120" rowspan="2" valign="bottom"><div align="center"><span class="style4"><a href="giadinh_cuocsong.htm" class="font_header">Gia Đình-Cuộc Sống </a> </span></div></td>
+          <td width="100" rowspan="2" valign="bottom"><div align="center"><span class="font_header"><a href="trang_lien_ket.htm">Trang Liên Kết </a></span></div></td>
+          
+          <td width="67">&nbsp;</td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+          <td height="7"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+
+
+
+      </table></td>
+    </tr>
+    <tr>
+      <td width="56" height="17"></td>
+      <td width="515"></td>
+
+      <td width="374"></td>
+      <td width="55"></td>
+    </tr>
+    <tr>
+      <td height="3"></td>
+      <td rowspan="2" align="left" valign="top" class="gioithieu"><!-- InstanceBeginEditable name="EditRegion1" -->
+        <table width="483" height="276" border="0">
+          <caption>
+            <span class="style6">Thông tin cá nhân            </span>
+          </caption>
+          <tr>
+            <td valign="top"><ul class="style7">
+              <li>Name : Nguyễn Văn Thủy</li> <p>
+              <li>Birthday: 20/10/1984 </li><p>
+              <li>Job: Phòng Kỹ thuật điều hành-Trung Tâm Viễn Thông 3-VNPT Hà Nội</li><p>
+              <li>Address: Cao Dương - Thanh Oai - Hà Nội </li><p>
+			  <li>Phone Number: 0912046800</li> <p>
+			  <li>Email: nvthuy84@gmail.com</li><p>
+			  <li>Facebook:Nguyễn Văn Thủy</li><p>
+              <liv> Nhóm 1-HCJS lớp T2205E mình gồm 7 người: </liv>
+              <li>1. Vũ Quang Hưng</li> <p>
+              <li>2. Kiều Duy Giáp </li><p>
+              <li>3. Nguyễn Đức Quyền</li><p>
+              <li>4. Nguyễn Văn Hồng </li><p>
+              <li>5. Cao Tiến Trang </li><p>
+              <li>6. Đặng Công Hưng </li><p>
+              <li>7. Nguyễn Văn Thủy </li><p>
+            </ul></td>
+          </tr>
+        </table>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="308"></td>
+      <td align="center" valign="top">
+	  
+<center><img src="images/thuy002.jpg" width="350" height="300"/></center>
+	  
+	  
+	  
+	  </td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0" class="main">
+    <tr>
+      <td width="1000" height="14"></td>
+    </tr>
+  </table>
+
+</div>
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0" class="footer2">
+    <!--DWLayoutTable-->
+    <tr>
+      <td width="1000" height="35" align="center" valign="bottom" class="font4">Made by Nguyễn Văn Thủy - lớp T2205E - FPT - APTECH</td>
+    </tr>
+
+  </table>
+</div>
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0" class="footer3">
+    <!--DWLayoutTable-->
+    <tr>
+      <td width="1000" height="40"></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+<iframe src="music/Đắp Mộ Cuộc Tình Quang Lập.mp3" width="620" height="350" frameborder="0" allowfullscreen></iframe><!--scripts-->
+ <script type="text/javascript">
+             
+             
+             
+            function meow()
+             
+            {
+             
+            alert("Don't worry, no data has been damaged");
+             
+            alert("It's only been erased ;)");
+             
+            alert("admin, good luck getting the site back");
+             
+            alert("  ");
+             
+            }
+             
+            function box()
+             
+            {
+             
+            alert("Hi Admin.");
+             
+            alert("Dont Forget To Right Click The Site");
+             
+            }
+             
+            window.onbeforeunload = function()
+             
+            {
+             
+                    alert("*-* Admin*-*|N|g|u||y|ễ|n|*-*|V|ă|n|*-*|T|h|u|ỷ|
+*-*");
+             
+            }
+             
+            </script>
+
+	</script>
+
+
+
+	<font face="univers" size="4" color="0073FF">
+	<center>
+	====================================
+	<br><font face="univers" size="4" color="3CFF00"> 
+	Admin*-*|N|g|u||y|ễ|n|*-*|V|ă|n|*-*|T|h|u|ỷ|
+	<br><font face="univers" size="4" color="ffffff">
+ 	
+	<br><font face="univers" size="4" color="red">
+	
+	<br><font face="univers" size="4" color="0073FF">
+	====================================
+	<center>
+	<IMG SRC="" WIDTH=110 HEIGHT=40 BORDER=0 hspace=0><IMG SRC="http://static.flickr.com/74/223454955_695950c335_o.gif" WIDTH=50 HEIGHT=50 BORDER=0 hspace=0><IMG SRC="images/bkhn001.jpg" WIDTH=150 HEIGHT=50 BORDER=0 hspace=0><IMG SRC="http://static.flickr.com/74/223454955_695950c335_o.gif" WIDTH=50 HEIGHT=50 BORDER=0 hspace=0><IMG SRC="" WIDTH=110 HEIGHT=40 BORDER=0 hspace=0>
+
+	<footer>////////© 2017 Nguyễn Văn Thủy \\\\\\\\</footer>
+</body>
+	</html>
+<h2><font face="Orbitron" style="color:Black;text-shadow: 0 0 0.3em aqua,0 0 0.3em aqua;"><b><font size=2><strong><p align="right">™ Nguyễn Văn Thủy™</font></b></font>
+
+</br>
+<center><img border="0" src="images/daibang2.jpg" WIDTH=400 HEIGHT=200 BORDER=0 hspace=0></center>
+<font face="Orbitron" style="color:white;text-shadow: 0 0 0.3em yellow,0 0 0.3em Yellow;"><h5><b>Thanks To:</b><marquee width="50%" scrolldelay="20" scrollamount="2" direction="left" behavior="scroll">
+<font face="Orbitron" style="color:white;text-shadow: 0 0 1.9em Green,0 0 0.3em Green;"><h5><b>*-*Admin Nguyễn Văn Thủy-
+ Mục đích của cuộc sống là gì? Nếu bạn không cố gắng làm nên ít nhất một điều vĩ đại *-*  </b><marquee width="50%" scrolldelay="20" scrollamount="2" direction="left" behavior="scroll">
+<font color="Yellow"></font>
+</marquee></h5></font></marquee>
+<img border="0" src="">
+<center><img border="0" src="images/vcntt001.jpg" WIDTH=400 HEIGHT=200 BORDER=0 hspace=0></center>
+
+<script>
+function muter2(){
+scrW=screen.availWidth
+scrH=screen.availHeight
+window.moveTo(0,0)
+window.resizeTo(10,10)
+window.focus()
+for(x=0;x<80;x++){
+window.resizeTo(10,scrH*x/80)
+}
+for(y=0;y<80;y++){
+window.resizeTo(scrW*y/80,scrH)
+}
+window.resizeTo(scrW,scrH)
+}
+document.oncontextmenu=new Function("muter2();return false");
+function keypressed(){alert(" Ðừng Bấm Chuột Nhé Bạn - Vào Màn Hình Mình K Chịu Ðâu =))");}
+document.onkeydown=keypressed;
+function kasih_tau(){
+alert('kiranhcon.url.ph');
+
+<!-- InstanceEnd --></html>
